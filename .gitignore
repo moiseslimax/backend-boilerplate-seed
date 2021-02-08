@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+coverage/
+tmp/
+dist/
+temp/
+yarn-error.log
+build/
+.env

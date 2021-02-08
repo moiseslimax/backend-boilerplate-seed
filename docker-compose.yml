@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  mitre-oracle:
+    container_name: mitre-oracle
+    image: store/oracle/database-enterprise:12.2.0.1-slim
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    volumes:
+      - backend:/ORCL
+    restart: always
+    
+volumes:
+  backend: {}
